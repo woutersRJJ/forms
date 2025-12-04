@@ -16,15 +16,15 @@ export function Person({p}) {
                onChange={e => setPerson({...person, age: e.target.value})}/>
 
         <button className="form-button" disabled={mode === 'W'}
-                onClick={(e) => setMode('W')}>Update
+                onClick={() => setMode('W')}>Update
         </button>
 
         <button className="form-button" disabled={mode === 'R'}
-                onClick={(e) =>  {setPerson(old); setMode('R')}}>Cancel
+                onClick={() =>  {setPerson(old); setMode('R')}}>Cancel
         </button>
 
         <button className="form-button" disabled={mode === 'R'}
-                onClick={(e) => {setMode('R'); setOld(person)} }>Save
+                onClick={() => {setMode('R'); setOld(person)} }>Save
         </button>
     </div>
 }
