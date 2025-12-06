@@ -13,6 +13,8 @@ function CrudTable() {
     const [editUser, setEditUser] = useState({ name: "", age: "" });
 
     function nextValue(){
+        if (users.length === 0)
+            return 1
         return users.find(obj => obj.id === Math.max(...users.map(obj => obj.id))).id + 1
     }
 
