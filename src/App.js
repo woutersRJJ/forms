@@ -1,11 +1,11 @@
 import './App.css';
-import CrudTable from "./components/CrudTable";
+import Acteurs from "./components/Acteurs";
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <CrudTable/>
+            <header>
+                <Acteurs/>
             </header>
         </div>
     );
